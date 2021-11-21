@@ -34,32 +34,29 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/899cf677d90a10b907a15.png",
+        photo=f"https://te.legra.ph/file/be59d5c0d55a63ba62193.jpg",
         caption=f"""**ᴀ ᴀᴅᴠᴀɴᴄᴇᴅ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜꜱɪᴄ ʙᴏᴛ ʙᴀꜱᴇᴅ ᴏɴ ᴍᴏɴɢᴏᴅʙ ᴡɪᴛʜ ᴀɪ ꜰᴇᴀᴛᴜʀᴇꜱ ...
 💞 ᴛʜᴀɴᴋꜱ ꜰᴏʀ  
-ᴜꜱɪɴɢ [ᴢᴀɪᴅ ʙᴏᴛꜱ](t.me/superior_bots) ...
+ᴜꜱɪɴɢ [✴𝔸𝕥𝕥𝕚𝕥𝕦𝕕𝕖 𝔾𝕒𝕝𝕒𝕩𝕪✴](t.me/@attitude_galaxy)........
 **""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❱ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                        "🔥ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ🔥", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", url=f"https://t.me/SUPERIOR_BOTS/160"
+                        "🍹ꜱᴜᴩᴩᴏʀᴛ🍹", url=f"https://t.me/Sweetkingdom1"
                     ),
                     InlineKeyboardButton(
-                        "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/itsunknown-12/Zaid-Vc-Player"
+                        "🥂⚜️ᴏᴡɴᴇʀ⚜️🥂", url=f"@Alone_Shaurya_king"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📢 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
-                    InlineKeyboardButton(
-                        "ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 🇮🇳", url="https://t.me/{ZAID_SUPPORT}"
+                        "📣ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ📣", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ]
                 
@@ -71,13 +68,13 @@ async def start_(client: Client, message: Message):
 @Client.on_message(commandpro(["/start", "/alive"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/a45bd27a16f92285120c8.png",
-        caption=f"""ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ 🔥♥️""",
+        photo=f"https://te.legra.ph/file/be59d5c0d55a63ba62193.jpg",
+        caption=f"""ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ🔥♥️""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/superior_Support")
+                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/attitude_galaxy")
                 ]
             ]
         ),
@@ -87,13 +84,13 @@ async def start(client: Client, message: Message):
 @Client.on_message(command(["repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/4c098ec0d9fb56a89f3c7.png",
+        photo=f"https://te.legra.ph/file/bfc3e137fc23773b4cd74.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴄʟɪᴄᴋ ᴍᴇ ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ 💞", url=f"https://github.com/itsunknown-12/Zaid-Vc-Player")
+                        "🔥🍹ᴄʟɪᴄᴋ ᴍᴇ ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ🍹🔥", url=f"https://github.com/ItsAttitudeking")
                 ]
             ]
         ),
