@@ -38,7 +38,7 @@ async def botstats(_, message: Message):
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     await message.reply_text(
-        text=f"**🎵 Bot Stats Of @{BOT_USERNAME} 💫** \n\n**🤖 Bot Version:** `V2.9.1` \n\n**👥 Users:** \n ↳**PM'ed Users:** `{total_users}` \n\n**💾 Disk Usage,** \n ↳**Total Disk Space:** `{total}` \n ↳**Used:** `{used}({disk_usage}%)` \n ↳**Free:** `{free}` \n\n**🎛 Hardware Usage,** \n ↳**CPU Usage:** `{cpu_usage}%` \n ↳**RAM Usage:** `{ram_usage}%`",
+        text=f"**🎵 Bot Stats Of @{BOT_USERNAME} 💫** \n\n**🤖 Bot Version:** `V2.9.1` \n\n**👥Chat:** \n ↳**Group's joined:** `{total_users}` \n\n**💾 Disk Usage,** \n ↳**Total Disk Space:** `{total}` \n ↳**Used:** `{used}({disk_usage}%)` \n ↳**Free:** `{free}` \n\n**🎛 Hardware Usage,** \n ↳**CPU Usage:** `{cpu_usage}%` \n ↳**RAM Usage:** `{ram_usage}%` \n\n 🔥🥂Powered By: [🔥JOIN🔥](@attitude_galaxy)",
         parse_mode="Markdown",
         quote=True
     )
@@ -92,7 +92,7 @@ async def ban(c: Client, m: Message):
         try:
             await c.send_message(
                 user_id,
-                f"Lmao You are **Banned 😂!** \n\nReason: `{ban_reason}` \nDuration: `{ban_duration}` day(s). \n\n**Message From The Owner! Ask in **@Nexa_bots** if you think this was an mistake."
+                f"Lmao You are **Banned 😂!** \n\nReason: `{ban_reason}` \nDuration: `{ban_duration}` day(s).\n\n**Apne baap or [👑🌹ATTITUDE KING🌹👑](@Alone_Shaurya_king) se panga mat lena beta** \n\n**Message From The Owner! Ask in **@sweetkingdom1** if you think this was an mistake."
             )
             ban_log_text += '\n\nSuccessfully Notified About This Ban to that **Dumb User** 😅'
         except:
@@ -127,7 +127,7 @@ async def unban(c: Client, m: Message):
         try:
             await c.send_message(
                 user_id,
-                f"Good News! **You are Unbanned** 😊!"
+                f"Good News! **Maaf kar diya Attitude king ne tumko** 😊!"
             )
             unban_log_text += '\n\nSuccessfully Notified About This to that **Good User** 😅'
         except:
