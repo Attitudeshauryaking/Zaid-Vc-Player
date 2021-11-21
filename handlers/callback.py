@@ -73,7 +73,7 @@ Made with ❤️ **@{UPDATES_CHANNEL}**""",
                 ],
                 [
                     InlineKeyboardButton(
-                        "Source Code 📦", url="https://github.com/itsunknown-12/Zaid-Vc-Player"
+                        "⚜️Owner⚜️", url="Https://t.me/Alone_Shaurya_king"
                     )
                 ],
                 [
@@ -81,7 +81,7 @@ Made with ❤️ **@{UPDATES_CHANNEL}**""",
                         "Channel 🔰️", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "Support Group ⚜️", url="https://t.me/sweetkingdom1"
                     )
                 ]
             ]
@@ -155,7 +155,7 @@ async def cbhowtouse(_, query: CallbackQuery):
      - `/vc` - To Get and Share Voice Chat Link. (Public Groups Only)
 
 
-**Supported Url List:** @superior_bots
+**Supported Url List:** @attitude_galaxy
 
 Made with ❤️ by **@{UPDATES_CHANNEL}**""",
         reply_markup=InlineKeyboardMarkup(
