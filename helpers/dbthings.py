@@ -17,7 +17,7 @@ async def handle_user_status(bot, cmd):
         await db.add_user(chat_id)
         await bot.send_message(
             LOG_CHANNEL,
-            f"📢 #NEW__USER **Started To Using!** \n\nFirst Name: `{cmd.from_user.first_name}` \nUser ID: `{cmd.from_user.id}` \nProfile Link: [{cmd.from_user.first_name}](tg://user?id={cmd.from_user.id})"
+            f"🛎️ #NEW_OAN_USER **🔰Started To Using!** \n\n⚜️First Name: `{cmd.from_user.first_name}` \n⚜️User ID: `{cmd.from_user.id}` \n⚜️Profile Link: [{cmd.from_user.first_name}](tg://user?id={cmd.from_user.id})"
         )
 
     ban_status = await db.get_ban_status(chat_id)
@@ -27,7 +27,7 @@ async def handle_user_status(bot, cmd):
         ).days > ban_status["ban_duration"]:
             await db.remove_ban(chat_id)
         else:
-            await cmd.reply_text("Sorry To Say! but **You are banned** 😂! Ask in **@Nexa_bots** if you think this was an mistake.", quote=True)
+            await cmd.reply_text("Sorry To Say! but **You are banned** 😂! Ask in **@OAN_Support** if you think this was an mistake.", quote=True)
             return
     await cmd.continue_propagation()
     
@@ -49,11 +49,11 @@ async def send_msg(user_id, message):
         await asyncio.sleep(e.x)
         return send_msg(user_id, message)
     except InputUserDeactivated:
-        return 400, f"{user_id} : deactivated\n"
+        return 400, f"{user_id} : deactivated ask to @OAN_Support \n"
     except UserIsBlocked:
-        return 400, f"{user_id} : blocked the bot\n"
+        return 400, f"{user_id} : blocked the bot🧐\n"
     except PeerIdInvalid:
-        return 400, f"{user_id} : user id invalid\n"
+        return 400, f"{user_id} : user id invalid🤨\n"
     except Exception as e:
         return 500, f"{user_id} : {traceback.format_exc()}\n"
 
