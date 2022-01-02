@@ -31,10 +31,10 @@ async def _(bot: Client, cmd: command):
 PLAYMSG_BUTTONS = InlineKeyboardMarkup(
     [
             [
-                InlineKeyboardButton("⚡ꜱᴜᴘᴘᴏʀᴛ⚡", url=f"https://t.me/sweetkingdom1"),
-                InlineKeyboardButton("🔥ᴄʜᴀɴɴᴇʟ🔥", url=f"https://t.me/attitude_galaxy"),
+                InlineKeyboardButton("⚡𝕊𝕌ℙℙ𝕆ℝ𝕋⚡", url=f"https://t.me/OAN_Support"),
+                InlineKeyboardButton("🔥𝕌ℙ𝔻𝔸𝕋𝔼𝕊🔥", url=f"https://t.me/Attitude_Network"),
             ],
-            [InlineKeyboardButton("🗑 ᴄʟᴏsᴇ", callback_data="close")],
+            [InlineKeyboardButton("🕹️ℂ𝕃𝕆𝕊𝔼🕹️", callback_data="close")],
         ]
 )
 
@@ -116,9 +116,9 @@ async def nplay(_, message: Message):
     bttn = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/attitude_galaxy")
+                InlineKeyboardButton("𝕌ℙ𝔻𝔸𝕋𝔼𝕊", url=f"https://t.me/Attitude_Network")
             ],[
-                InlineKeyboardButton("🗑", callback_data="close")
+                InlineKeyboardButton("🕹️ℂ𝕃𝕆𝕊𝔼🕹️", callback_data="close")
             ]
         ]
     )
