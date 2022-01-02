@@ -1,5 +1,4 @@
-# Credits @AbirHasan2005, @DevsExpo and DaisyXMusic
-# This file is part of CallsMusic-Plus
+
 
 import sys
 import os
@@ -38,7 +37,7 @@ async def botstats(_, message: Message):
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     await message.reply_text(
-        text=f"**🎵 Bot Stats Of @{BOT_USERNAME} 💫** \n\n**🤖 Bot Version:** `V2.9.1` \n\n**👥Chat:** \n ↳**Group's joined:** `{total_users}` \n\n**💾 Disk Usage,** \n ↳**Total Disk Space:** `{total}` \n ↳**Used:** `{used}({disk_usage}%)` \n ↳**Free:** `{free}` \n\n**🎛 Hardware Usage,** \n ↳**CPU Usage:** `{cpu_usage}%` \n ↳**RAM Usage:** `{ram_usage}%` \n\n 🔥🥂Powered By: [🔥JOIN🔥](@attitude_galaxy)",
+        text=f"**ཧᜰ꙰ꦿ➢𝐎𝐀𝐍༒☛**\n 𝐒𝐓𝐀𝐓𝐒: @{BOT_USERNAME} 💫 \n\n━━━━━━━━━━━━━━━━━━━━\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★★🤖 Bot Version: V2.9.1 \n┣★★👥Chat: \n┣★Group's joined: {total_users} \n┣★★💾 Disk Usage: \n┣★Total Disk Space: {total} \n┣★Used: {used}({disk_usage}%)\n┣★Free: {free} \n┣★★🎛 Hardware Usage \n┣★CPU Usage: {cpu_usage}% \n┣★RAM Usage:** {ram_usage}% \n┣★★★𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 : @Attitude_Network \n┗━━━━━━━━━━━━━━━━━┛\n\n━━━━━━━━━━━━━━━━━━━━",
         parse_mode="Markdown",
         quote=True
     )
@@ -55,7 +54,7 @@ async def chatcast(_, message: Message):
     sent=0
     failed=0
     if message.from_user.id not in SUDO_USERS:
-        await message.reply("Go away! This is not for you 😂!")
+        await message.reply("Go away! This is not for you 😂 for more join: @Attitude_Network")
         return
     else:
         wtf = await message.reply("`Starting a Chatcast...`")
@@ -92,7 +91,7 @@ async def ban(c: Client, m: Message):
         try:
             await c.send_message(
                 user_id,
-                f"Lmao You are **Banned 😂!** \n\nReason: `{ban_reason}` \nDuration: `{ban_duration}` day(s).\n\n**Apne baap or [👑🌹ATTITUDE KING🌹👑](@Alone_Shaurya_king) se panga mat lena beta** \n\n**Message From The Owner! Ask in **@sweetkingdom1** if you think this was an mistake."
+                f"Lmao You are **Banned 😂!** \n\nReason: `{ban_reason}` \nDuration: `{ban_duration}` day(s).\n\n**Apne baap or [👑🌹ATTITUDE KING🌹👑](@ItsAttitudeking) se panga mat lena beta** \n\n**Message From The Owner! Ask in **@OAN_Support** if you think this was an mistake."
             )
             ban_log_text += '\n\nSuccessfully Notified About This Ban to that **Dumb User** 😅'
         except:
